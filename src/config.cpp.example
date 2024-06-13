@@ -1,0 +1,11 @@
+#include "config.h"
+
+namespace Config {
+    const char* DEVICE = "";
+    const char* WIFI_SSID = "";
+    const char* WIFI_PASSWORD = "";
+    const char* INFLUXDB_URL = "";
+    const char* INFLUXDB_TOKEN = "";
+    const char* INFLUXDB_ORG = "";
+    const char* INFLUXDB_BUCKET = "";
+}
