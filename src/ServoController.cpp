@@ -8,23 +8,23 @@ ServoController::ServoController(int servoPin){
 }
 
 void ServoController::servoOn() {
-   servo.write(100);
-   delay(1150);
+    servo.write(120);
+   delay(340);
 
    servo.write(90);
-   delay(500);
+   delay(250);
 
-   servo.write(80);
-   delay(1350);
-
-   servo.write(90);
-   delay(500);
-
-   servo.write(100);
-   delay(1150);
+   servo.write(60);
+   delay(600);
 
    servo.write(90);
-   delay(500);
+   delay(250);
+
+   servo.write(120);
+   delay(340);
+
+   servo.write(90);
+   delay(250);
 
     servoStatus = true;
 }

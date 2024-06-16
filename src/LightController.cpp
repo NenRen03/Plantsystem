@@ -34,11 +34,13 @@ void LightController::lightControl() {
 
 void LightController::lampOn() {
     switchKaku(rfPin, TRANSMITTERID1, 1, 1, true, 3);
+    Serial.println("Lamp is on");
     lampStatus = true;
 }
 
 void LightController::lampOff() {
     switchKaku(rfPin, TRANSMITTERID1, 1, 1, false, 3);
+    Serial.println("Lamp is off");
     lampStatus = false;
 }
 

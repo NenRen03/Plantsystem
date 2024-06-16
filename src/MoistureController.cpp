@@ -23,8 +23,9 @@ void MoistureController::moistControl() {
     Serial.print("Moisture Value = ");
     Serial.println(moistDiff);
 
-    if (initialMoistValue - moistValue >= 200) {
+    if (moistDiff <= -500) {
         pumpOn();
+        pumpOff();
     } else {
         pumpOff();
     }
